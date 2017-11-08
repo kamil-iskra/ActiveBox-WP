@@ -28,7 +28,9 @@
 	<section class="banner" role="banner">
         <header id="header">
             <div class="header-content clearfix">
-                <a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
+				<a class="logo" href="<?php echo home_url(); ?>">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+				</a>
                 <nav class="navigation" role="navigation">
 					<?php html5blank_nav(); ?>
                 </nav>
