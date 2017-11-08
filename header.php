@@ -23,28 +23,25 @@
         </script>
 
 	</head>
-	<body <?php body_class(); ?>>
+	<body>
 
-		<!-- wrapper -->
-		<div class="wrapper">
-
-			<!-- header -->
-			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
+	<section class="banner" role="banner">
+        <header id="header">
+            <div class="header-content clearfix">
+                <a class="logo" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
+                <nav class="navigation" role="navigation">
+					<?php html5blank_nav(); ?>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a>
+            </div><!-- header content -->
+        </header><!-- header -->
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="banner-text text-center">
+                    <h1>Your Favorite One Page Multi Purpose Template</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+                    <a href="#" class="btn btn-large">Find out more</a>
+                </div><!-- banner text -->
+            </div>
+        </div>
+    </section><!-- banner -->

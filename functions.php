@@ -100,6 +100,28 @@ function html5blank_header_scripts()
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+        
+        // custom layout scripts
+        wp_register_script('bootstrap', get_template_directory_uri() . '/js/lib/bootstrap.min.js', array(), false); // Modernizr
+        wp_enqueue_script('bootstrap'); // Enqueue it!
+
+        wp_register_script('jquery.fancybox', get_template_directory_uri() . '/js/lib/jquery.fancybox.pack.js', array(), false); // Modernizr
+        wp_enqueue_script('jquery.fancybox'); // Enqueue it!
+
+        wp_register_script('jquery.flexslider', get_template_directory_uri() . '/js/lib/jquery.flexslider-min.js', array(), false); // Modernizr
+        wp_enqueue_script('jquery.flexslider'); // Enqueue it!
+
+        wp_register_script('jquery', get_template_directory_uri() . '/js/lib/jquery.min.js', array(), false); // Modernizr
+        wp_enqueue_script('jquery'); // Enqueue it!
+
+        wp_register_script('jquery.waypoints', get_template_directory_uri() . '/js/lib/jquery.waypoints.min.js', array(), false); // Modernizr
+        wp_enqueue_script('jquery.waypoints'); // Enqueue it!
+
+        wp_register_script('retina', get_template_directory_uri() . '/js/lib/retina.min.js', array(), false); // Modernizr
+        wp_enqueue_script('retina'); // Enqueue it!
+
+        wp_register_script('main', get_template_directory_uri() . '/js/main.js', array(), false); // Modernizr
+        wp_enqueue_script('main'); // Enqueue it!
     }
 }
 
@@ -115,11 +137,27 @@ function html5blank_conditional_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
+    wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
 
-    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_register_style('html5blank', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+
+    // custom layout styles
+    wp_register_style('animate', get_template_directory_uri() . '/css/animate.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('animate'); // Enqueue it!
+
+    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('bootstrap'); // Enqueue it!
+
+    wp_register_style('flexslider', get_template_directory_uri() . '/css/flexslider.css', array(), '1.0', 'all');
+    wp_enqueue_style('flexslider'); // Enqueue it!
+
+    wp_register_style('jquery.fancybox', get_template_directory_uri() . '/css/jquery.fancybox.css', array(), '1.0', 'all');
+    wp_enqueue_style('jquery.fancybox'); // Enqueue it!
+
+    wp_register_style('responsive', get_template_directory_uri() . '/css/responsive.css', array(), '1.0', 'all');
+    wp_enqueue_style('responsive'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
