@@ -6,4 +6,4 @@ I used one Page Multi Purpose Website Template created by [Kamal Chaneman](http:
 
 [Demo html template](http://kamalchaneman.com/activebox/)
 
-![Alt text](/docs/ActiveBox.jpg?raw=true "Screen")
+![Screenshot](/docs/ActiveBox.jpg)
